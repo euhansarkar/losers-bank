@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <header class="w-9/12 mx-auto mt-6">
+        <h1 class="text-5xl capitalize text-center">let's get some <span class="font-bold text-red-600">moooooooneeeeeey</span></h1>
+    </header>
+    <main class="w-9/12 mx-auto mt-12">
+        <section class="mt-12">
+            <div class="grid gap-4 grid-cols-3 capitalize text-white font-medium">
+                <div class="bg-amber-500 p-12 rounded">
+                    <h2 class="text-4xl">deposit</h2>
+                    <h3 class="text-6xl">$<span id="total-deposit">00</span></h3>
+                </div>
+                <div class="bg-blue-500 p-12 rounded">
+                    <h2 class="text-4xl">withdraw</h2>
+                    <h3 class="text-6xl">$<span id="total-withdraw">00</span></h3>
+                </div>
+                <div class="bg-purple-500 p-12 rounded">
+                    <h2 class="text-4xl">balance</h2>
+                    <h3 class="text-6xl">$<span id="total-balance">1000</span></h3>
+                </div>
+            </div>
+            
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-5 capitalize">
+                <div class="bg-rose-400 p-12 rounded space-y-5">
+                    <h2 class="text-3xl font-semibold text-white">please deposit</h2>
+                    <div class="ml-3">
+                        <input class="block mb-4 p-2 rounded focus:outline-none capitalize" type="number" name="deposit" id="deposit-amount" placeholder="enter your deposit amount">
+                        <button id="btn-deposit" class="capitalize bg-stone-500 py-2 px-7 rounded-lg font-medium text-white">deposit</button>
+                    </div>
+                </div>
+                <div class="bg-emerald-400 p-12 rounded space-y-5">
+                    <h2 class="text-3xl font-semibold text-white">please withdraw</h2>
+                    <div class="ml-3">
+                        <input class="block mb-4 p-2 rounded focus:outline-none capitalize" type="number" name="deposit" id="withdraw-amount" placeholder="enter your withdrawal amount">
+                        <button id="btn-withdraw" class="capitalize bg-stone-500 py-2 px-7 rounded-lg font-medium text-white">withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
